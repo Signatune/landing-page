@@ -1,3 +1,17 @@
+:root {
+  --page-margin: 85px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 * {
   font-family: Roboto;
 }
@@ -8,14 +22,21 @@
 
 .header {
   display: flex;
-  justify-content: space-around;
-  padding: 8px;
+  justify-content: space-between;
+  padding: 8px 85px;
+  max-width: 950px;
 }
 
 .logo {
   font-size: 24px;
   color: #f9faf8;
   font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .right-links ul {
@@ -31,19 +52,22 @@
 
 .main-content {
   display: flex;
-  justify-content: space-around;
-  padding: 32px;
+  justify-content: space-between;
+  padding: 70px 85px;
   align-items: center;
+  gap: 100px;
 }
 
 .main-text {
-  flex: 0 1 0;
+  flex: 1 1 0;
+  max-width: 400px;
 }
 
 .hero {
   font-size: 48px;
   font-weight: extra-bold;
   color: #f9faf8;
+  margin: 0;
 }
 
 .main-subtext {
@@ -69,8 +93,101 @@
   background: grey;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.info {
+  padding: 16px 85px 70px;
+}
+
+.info > h2 {
+  font-size: 36px;
+  font-weight: extra-bold;
+  color: #1f2937;
+  text-align: center;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card > .card-img {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #3882f6;
+  border-radius: 5px;
+}
+
+.card > p {
+  font-size: 11px;
+  text-align: center;
+  max-width: 100px;
+  color: grey;
+}
+
+.quote-section {
+  background: #e5e7eb;
+  padding: 40px 85px;
+}
+
+.quote-section > .quote {
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.attribution {
+  text-align: right;
+}
+
+.cta-section {
+  display: flex;
+  justify-content: center;
+  padding: 32px 85px;
+}
+
+.cta-box {
+  display: flex;
+  justify-content: space-between;
+  background: #3882f6;
+  border-radius: 5px;
+  padding: 20px 75px;
+  gap: 150px;
+  color: #e5e7eb;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-text > .head {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.cta {
+  background: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  color: #e5e7eb;
+  width: 100px;
+  font-weight: bold;
+}
+
+.footer {
+  background: #1f2937;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  font-size: 14px;
 }
