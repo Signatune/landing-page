@@ -116,6 +116,7 @@ ul {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  gap: 6px;
 }
 
 .card > .card-img {
