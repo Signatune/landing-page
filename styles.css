@@ -67,13 +67,14 @@ ul {
   font-size: 48px;
   font-weight: extra-bold;
   color: #f9faf8;
-  margin: 0;
+  margin-bottom: 16px;
 }
 
 .main-subtext {
   font-size: 18px;
   color: #e5e7eb;
   font-weight: lighter;
+  margin-bottom: 16px;
 }
 
 .sign-up {
@@ -156,6 +157,7 @@ ul {
 .cta-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: #3882f6;
   border-radius: 5px;
   padding: 20px 75px;
@@ -174,12 +176,15 @@ ul {
 }
 
 .cta {
+  flex: 0 0 auto;
   background: none;
   border: 1px solid #e5e7eb;
   border-radius: 5px;
   color: #e5e7eb;
-  width: 100px;
+  width: 175px;
+  height: 60px;
   font-weight: bold;
+  font-size: 22px;
 }
 
 .footer {
